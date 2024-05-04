@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- this means use the newest version of html and it tells the browser which html version to use-->
+<html lang="en"><!--this is the start of the code ALL PAGE CONTENT MUST BE CONTAINED IN THIS TAG and we specified the page language to be "en" as in English-->
+    <head><!--the head element has title, meta, etc...
+            it can also have links to the external css files that will be used to style the page
+            and links to the javascript files that will be used to add functionality to your page-->
+        <meta charset="utf-8">
+        <!--You can set browser behavior by adding self-closing meta elements in the head. Here's an example:<meta attribute="value">
+        Inside the head element, nest a meta element with an attribute named charset. 
+        Set to the value to utf-8 which tells the browser how to encode characters for the page.Note that meta elements are self-closing.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--This is used for the styling of the page to look similar on mobile as it does on a desktop or laptop-->
+        <title>Cats :)</title><!--this is the name of the website-->
+        <link rel="stylesheet" href="cats.css">
+    </head>
+    <body><!--the body is going to contain all the visible content of a page-->
+        <audio controls autoplay loop src="Bloopin.mp3"></audio>
+        <div class="title"><h1 class="rainbow-color">Catz 🙀</h1><!--h is short for heading--></div>
+        <hr class="h1-hr">
+        <main><!--this is used to put the main content of the website inside-->
+            <section><!--the section element is used to divide different sections of the code-->
+                <div class="section1">
+                    <h2>Chippi Chappa cat</h2>
+                    <!-- TODO: Add link to cat photos-->
+                    <img src="https://media.tenor.com/DeyJjppLSScAAAAM/chipichipi-chipi-chipi.gif" alt="A cute grey cat laying down on it's back">
+                    <p><!--this is short for paragraph and it's used to write a paragraph below the heading-->
+                        Click <a class="rainbow-color" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a> to unlock the secrets of life
+                        <!--this <a> is short for "anchor" and it's used to link to things wether that was by highlighting a text to make
+                        it itself a link or maybe make a whole image clickable to be a link.
+                        you use href attribute to insert the text and target ="_blank" to make the link open in a new tab-->
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="section2">
+                    <h2>Goofy cats</h2>
+                    <p>Things cats <em>love</em>:</p> <!--em is to convert text to italian-->
+                    <ul><!--unordered list-->
+                        <li>Meowing?</li><!--li is short for list item-->
+                        <li>Laser pointers</li>
+                        <li>Idk I never had a cat 💀</li>
+                    </ul>
+                    <figure><!--this element is used to add images with captions below-->
+                        <a href="https://www.youtube.com/watch?v=Gnm3hIcjiCQ" target="_blank"><img src="https://media.tenor.com/03XIVm7Oy6cAAAAC/cat-dancing-cat.gif" alt="a cat gangam styling it"></a>
+                        <figcaption>This cat is hitting the griddy</figcaption>
+                    </figure>
+                    <p>Things cats <strong>hate</strong>:</p><!--strong is to convert text to bold-->
+                    <ol><!--ordered list-->
+                        <li>Other cats</li>
+                        <li>Uhhh.....</li>
+                        <li>John Cena (he is invisible)</li>
+                    </ol>
+                    <figure>
+                        <a href="https://www.youtube.com/watch?v=L3tsYC5OYhQ" target="_blank"><img src="https://media.tenor.com/KQgBkmCjdi0AAAAM/cat-fighting-meme-low-quality.gif" alt="EPIC CATS FIGHT!"></a>
+                        <figcaption>Don't Click on that image <div class="small-text">please click on it</div></figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <div class="section3">
+                    <h2>Cat Form</h2>
+                    <form action="https://freecatphotoapp.com/submit-cat-photo">
+                        <!--the <form> element is used to create an interactive form on a web page.
+                            Forms are essential for collecting user input, such as text, selections, and other types of data.
+                            The <form> element defines an area where users can enter information that is sent to a server for processing.-->
+                        <!--The action attribute indicates where form data should be sent. 
+                        For example, (<form action="/submit-url"></form>) tells the browser that the form data should be sent to the path /submit-url.-->
+
+                        <fieldset><!--The fieldset element is used to group related inputs and labels together in a web form. 
+                            fieldset elements are block-level elements, meaning that they appear on a new line.
+                            Nest the Indoor and Outdoor radio buttons within a fieldset element, and don't forget to indent the radio buttons.-->
+                            
+                            <legend>Is your cat an indoor or outdoor cat?</legend>
+                            <!--The legend element acts as a caption for the content in the fieldset element. 
+                                It gives users context about what they should enter into that part of the form-->
+
+                            <!--BEFORE READING THE REST OF THE CODE READ THESE DEFINITIONS FIRST
+                                Definitions:
+                        label: it's used to make the text of the input clickable so that once you click the text you highlight the input.
+                        input: used to put inputs on a website and it has different types.
+                        name (input attribute): this attribute is used to make the input have a group and name that group so that if you choose
+                        on of the inputs it dehiglight the other.
+                        id: this is used to make a unique identifer for the input (will be explained later in css).
+                        for: this is used to help assisting technologies link the lable with it's child's "input" id (will be explained later in css).
+                        button: The default behavior of clicking a form button without any attributes
+                        submits the form to the location specified in the form's action attribute.-->
+                            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" required> Indoor </label>
+                            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor </label>
+                            <!--If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. 
+                            Since your radio buttons do not have a value attribute,
+                            the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.
+                            Add a value attribute to both radio buttons. For convenience, set the button's value attribute to the same value as its id attribute.-->
+                        </fieldset>
+                        <fieldset>
+                            <legend>What's you cat's personality</legend>
+                            <label for="chill"><input id="chill" type="checkbox" name="personality" value="chill"> Chill </label>
+                            <label for="evil"><input id="evil" type="checkbox" name="personality" value="evil"> Evil </label>
+                            <label for="goofy"><input id="goofy" type="checkbox" name="personality" value="goofy"> Goofy </label>
+                            <!--name attribute with the value "personality" to the checkbox input element. While you won't notice this in the browser, 
+                            doing this makes it easier for a server to process your web form, especially when there are multiple checkboxes.-->
+                            <!--Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, 
+                            it's best practice to include it with any checkboxes or radio buttons on the page.
+                            Adding a value attribute to each checkbox. For convenience, 
+                            then setting each checkbox's value attribute to the same value as its id attribute.-->
+                        </fieldset>
+                        <br>
+                        <button type="submit">Submit</button>
+                        <!--The button you added will submit the form by default. However, relying on default behavior may cause confusion. 
+                            type attribute with the value "submit" make it clear that it is a submit button.-->
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>😸</p>
+        </footer><!--the stuff inside a footer elements isn't going to look any different on the webpage
+                    this is mainly for screen readers and SEO(search engine optimization) purposes
+                    so that different section of your webpage can be identified
+                    small:this element makes text smaller-->
+    </body>
+</html>
+<!--last step is to update this to a web hosting provider so that you can get this website on the internet so that other people can access it-->

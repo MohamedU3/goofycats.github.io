@@ -1,0 +1,185 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/12/f6/ac/12f6accc21f3cad0047fc68fc282569c.gif);
+}
+
+h1,h2{
+    text-align: center;
+}
+audio{
+    display: block;
+    margin: auto;
+}
+audio::-webkit-media-controls-panel{
+    background-color:rgb(94, 105, 252);
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    color:linear-gradient(100deg,red,green,blue);
+}
+h2{
+    font-size: 28px;
+    color: #ff0062;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 38, 0);
+    font-size: 17px; 
+    font-weight: 550;
+}
+ol,ul{
+    font-family: 'Pacifico', cursive;
+    color: rgb(253, 0, 211);
+    font-size: 18px; 
+    font-weight: 550;
+}
+
+hr{
+    animation: rainbow-background-color 2s linear infinite;
+    height: 9px;
+    border: none;
+}
+
+.h1-hr{
+    width: 200px;
+    height: 4px;
+    margin-top: -10px;
+}
+img{
+    border-radius: 20px;
+}
+
+/*RAINBOW ANIMATION*/
+
+@keyframes rainbow-color{
+    0% {color:red;}
+    16.67% {color:orange;}
+    33.33% {color:yellow;}
+    50% {color:green;}
+    66.67% {color:blue;}
+    83.33% {color:indigo;}
+    100% {color:violet;}
+}
+
+@keyframes rainbow-background-color{
+    0% {background-color: red;}
+    16.67% {background-color: orange;}
+    33.33% {background-color: yellow;}
+    50% {background-color: green;}
+    66.67% {background-color: blue;}
+    83.33% {background-color: indigo;}
+    100% {background-color: violet;}
+}
+
+@keyframes rainbow-border-color{
+    0% {border-color: red;}
+    16.67% {border-color: orange;}
+    33.33% {border-color: yellow;}
+    50% {border-color: green;}
+    66.67% {border-color: blue;}
+    83.33% {border-color: indigo;}
+    100% {border-color: violet;}
+}
+@keyframes rainbow-box-shadow{
+    0% {box-shadow: 0 0 20px 10px red;}
+    16.67% {box-shadow: 0 0 20px 10px orange;}
+    33.33% {box-shadow: 0 0 20px 10px yellow;}
+    50% {box-shadow: 0 0 20px 10px green;}
+    66.67% {box-shadow: 0 0 20px 10px blue;}
+    83.33% {box-shadow: 0 0 20px 10px indigo;}
+    100% {box-shadow: 0 0 20px 10px violet;}
+}
+.rainbow-color{
+    animation: rainbow-color 2s linear infinite;
+}
+
+/*SECTION 1*/
+
+.section1 p,.section1 img{
+    color:#ff0062;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section1 img{
+    width: 600px;
+}
+.section1{
+    margin-top: 40px;
+}
+.section1 h2{
+    color: #ff0062;
+    animation: rainbow-border-color 2s linear infinite;
+    border: 4px solid;
+    border-radius: 6px;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+}
+
+/*SECTION 2*/
+
+.section2 h2{
+    color:#0011ff;
+    animation: rainbow-border-color 2s linear infinite;
+    border: 4px solid;
+    border-radius: 6px;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+}
+
+.section2 p{
+    color: #0011ff;
+    font-size: 20px;
+}
+.section2 img{
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+.section2 figcaption{
+    animation: rainbow-color 1s linear infinite;
+    display: block;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.small-text{
+    font-size: 10px;
+}
+.section2 ul,ol{
+    color:#1e00c5;
+}
+/*SECTION 3*/
+.section3 h2{
+    color:#ff00ff;
+    animation: rainbow-border-color 2s linear infinite;
+    border: 4px solid;
+    border-radius: 6px;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+}
+.section3 form,fieldset{
+    color:#ff00ff;
+    border-width: 5px;
+    border-radius: 10px;
+    font-weight: 550;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    animation: rainbow-border-color 2s linear infinite;
+}
+.section3 button:hover{
+    /*background:linear-gradient(100deg,#ff00ff,#ff0000);*/
+    animation: rainbow-background-color 2s linear infinite;
+}
+.section3 button{
+    animation: rainbow-box-shadow 5s linear infinite;
+    background-color:black;
+    color: white;
+}
